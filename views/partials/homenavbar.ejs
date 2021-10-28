@@ -1,0 +1,16 @@
+<nav class="navbar   navbar-dark navbar-expand-lg bg-primary ">
+    <a href="" class="navbar-brand">
+        <h4 class=" display-6">World <span class="text-dark">Tech</span></h4>
+    </a>
+    <ul class="navbar-nav float-right">
+        <li class="nav-item float-left"><a class="nav-link" href="/"> Home</a></li>
+
+        <% categories.forEach(category => { %>
+
+            <li class="nav-item "><a class="nav-link" href="/category/<%= category.slug %> "><%= category.title %> </a></li>
+
+        <% }) %>
+
+    </ul>
+    
+    </nav>

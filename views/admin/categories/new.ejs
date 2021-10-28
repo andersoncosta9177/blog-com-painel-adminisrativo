@@ -1,0 +1,24 @@
+<%- include('../../partials/header.ejs'); %>
+    <%- include('../../partials/navbar.ejs'); %>
+
+
+        <div class="container">
+            <hr>
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="display-5 text-success text-center">-Cadastro de categoria-</h1>
+                </div>
+                <div class="card-body">
+                    <form method="post" class="form-group" action="/categories/save">
+                        <input class="form-control" type="text" name="title" placeholder="Digite o tipo da categoria">
+                        <button class=" mt-2 btn btn-primary">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <%-include('../../partials/footer.ejs'); %>

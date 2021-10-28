@@ -1,0 +1,42 @@
+<%- include('partials/header.ejs'); %> 
+
+<body>
+    <%- include('partials/homenavbar.ejs'); %> 
+
+
+<div class="container">
+<hr>
+
+    <div class="jumbotron">
+        <h1 class="display-4 text-center">Bem vindo!🖥</h1>
+        <p class="lead text-center text-primary">Este é o blog da tech innovation</p>
+        <!-- <hr class="my-4"> -->
+        <!-- <p class="lead   text-center">A criatividade é pensar coisas novas. A inovação é fazer coisas novas</p> -->
+        <p class="lead   text-center">Confira abaixo as ultimas noticias sobre tecnologia do mundo!</p>
+
+       
+      </div>
+
+
+    <hr>
+    <% articles.forEach(article => { %>
+        <div class="card">
+            <div class="card-header">
+               <h2 class=""><%= article.title %> </h2>
+            </div>
+            <div class="card-body">
+
+              <a href="/<%=article.slug %> " class="btn btn-success">Ler mais</a>
+            </div>
+            <br>
+        </div>
+     
+    <% }) %>
+</div>
+
+
+
+
+ 
+</body>
+<%- include('partials/footer.ejs'); %> 
